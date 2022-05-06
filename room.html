@@ -9,6 +9,7 @@
         <!-- --------------- CSS ---------------------------------------------- -->
         <link rel="stylesheet" href="styles/globol.css">
         <link rel="stylesheet" href="styles/room.css">
+        <link rel="stylesheet" href="styles/modal.css">
         <!-- --------------- FONTS -------------------------------------------->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,14 +96,13 @@
                             </div>
                         </div>
 
-
-                        <div class="question-wrapper read">
+                        <div class="question-wrapper">
                             <div class="question-content">
                                 <div class="user">
                                     <img src="assets/user.svg" alt="avatar">
                                 </div>
                                 <div class="question">
-                                    <p>O que é TypeScript?</p>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore eum repellendus nihil tempora, repudiandae, cumque odio iste dolores molestiae deleniti iusto perferendis omnis? Consequatur praesentium libero iusto obcaecati sit illo.</p>
                                 </div>
                             </div>
                             <div class="actions">
@@ -116,9 +116,46 @@
                                 </a>
                             </div>
                         </div>
+
+                        <div class="question-wrapper read">
+                            <div class="question-content">
+                                <div class="user">
+                                    <img src="assets/user.svg" alt="avatar">
+                                </div>
+                                <div class="question">
+                                    <p>O que é TypeScript?</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                
+                                <a href="#" class="delete">
+                                    <img src="assets/trash.svg" alt="Excluir">
+                                    Excluir
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
+        </div>
+
+        <!-- ------- MODAL ------------ -->
+
+        <div class="modal-wrapper">
+            <div class="modal">
+                <h2>Excluir pergunta</h2>
+                <p>Tem certeza que vc deseja exluir esta pergunta?</p>
+                <form action="#">
+                    <label class="sr-only" for-id="password">Digite sua senha admin</label>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha"/>
+                   
+                    <div class="buttons">
+                        <div class="button grey">Cancelar</div>
+                        <button class="red">Sim, excluir</button>
+                    
+                    </div>
+                </form>
+            </div>
         </div>
     </body>
 </html>
