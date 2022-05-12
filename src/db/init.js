@@ -14,6 +14,7 @@ const initDb = {
             title TEXT,
             read INT,
             room INT
+    
         )`);
 
         await db.close()
