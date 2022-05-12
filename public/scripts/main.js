@@ -9,7 +9,6 @@ const modalButton = document.querySelector('.modal button')
 const checkButtons = document.querySelectorAll(".actions a.check")
 
 checkButtons.forEach(button => {
-
     button.addEventListener("click", handleClick)
 })
 
@@ -40,3 +39,10 @@ function handleClick(event, check = true){
 
     modal.open()
 }
+
+//copy to clipboard
+const roomId = document.querySelector("#room-id")
+roomId.addEventListener("click", (event) => {
+    const questionId = roomId.dataset.id       
+    navigator.clipboard.writeText(questionId)
+})
