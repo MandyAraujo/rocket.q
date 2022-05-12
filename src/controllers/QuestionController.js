@@ -19,11 +19,13 @@ module.exports = {
         if(verifyRoom.pass == password){
             if(action == "delete"){
                 await db.run(`DELETE FROM questions WHERE id = ${questionId}`)
+            }else if(action == "check"){
+            await db.run(`UPDATE questions SET read = 1 WHERE id = ${questionId}`)
             }
-        }else if(action == "check"){
-            await db.run (`UPDATE questions SET read = 1 WHERE id = ${questionId}`)
         }
 
+
+    
         res.redirect(`/room/${roomId}`)
         
 
