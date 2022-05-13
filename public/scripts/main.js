@@ -45,4 +45,6 @@ const roomId = document.querySelector("#room-id")
 roomId.addEventListener("click", (event) => {
     const questionId = roomId.dataset.id       
     navigator.clipboard.writeText(questionId)
+    
 })
+
